@@ -1,12 +1,14 @@
 import React from "react";
 
-function Transaction() {
+// It will receive data from it's parent TransactionList
+function Transaction({date,description,category,amount}) {
   return (
     <tr>
-      <td>{"your code here..."}</td>
-      <td>{"your code here..."}</td>
-      <td>{"your code here..."}</td>
-      <td>{"your code here..."}</td>
+      
+      <td>{date}</td>
+      <td>{description}</td>
+      <td>{category}</td>
+      <td>{amount}</td>
     </tr>
   );
 }
