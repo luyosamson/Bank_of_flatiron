@@ -18,7 +18,12 @@ function AddTransactionForm({onSubmittion}) {
   function handleSubmit(e){
     e.preventDefault()
     onSubmittion(myFormData)
-    // console.log(myFormData)
+    setmyFormData({
+      date:"",
+    description:"",
+    category:"",
+    amount: 0
+    })
 
   }
 
