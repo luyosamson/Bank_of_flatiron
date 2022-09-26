@@ -35,9 +35,9 @@ fetch("http://localhost:8001/transactions")
 
     fetch("http://localhost:8001/transactions",server_Option)
     .then(my_Data=>my_Data.json())
-    .then(newData=>console.log(newData))
+    .then(newData=>(newData))
     
-  }
+  };
 
 function handleOnFormSearching(search){
   setMytransactions(transact=>transact.filter(transaction=>transaction.description?.includes(search)))

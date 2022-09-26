@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 
+
 function AddTransactionForm({onSubmittion}) {
 
   const [myFormData,setmyFormData]=useState(
@@ -27,8 +28,6 @@ function AddTransactionForm({onSubmittion}) {
 
   }
 
-
-
   return (
     <div className="ui segment">
       <form className="ui form" onChange={handleFormChange}   onSubmit={handleSubmit}  >
@@ -39,7 +38,7 @@ function AddTransactionForm({onSubmittion}) {
           <input type="text" name="category" placeholder="Category"  value={myFormData.category} />
           <input type="number" name="amount" placeholder="Amount" step="0.01" value={myFormData.amount} />
         </div>
-        <button className="ui button" type="submit" >
+        <button className="ui button" type="submit">
           Add Transaction
         </button>
       </form>
